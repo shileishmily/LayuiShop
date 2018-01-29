@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LayuiShop.iml" filepath="$PROJECT_DIR$/.idea/modules/LayuiShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LayuiShop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/LayuiShop_main.iml" group="LayuiShop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LayuiShop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/LayuiShop_test.iml" group="LayuiShop" />
+    </modules>
+  </component>
+</project>

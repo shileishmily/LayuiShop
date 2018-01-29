@@ -1,0 +1,444 @@
+.Xcontent06{
+    width: 420px;
+    height: 500px;
+    margin: 0px auto;
+    float: left;
+}
+
+/*放大镜 start*/
+#showbox {background:#eee;float: left;border:1px solid #ddd;}
+#showbox span {background-color:#83c44e;}
+#showsum {left:25px; margin-top:10px;}
+#showsum span {border:1px solid #ddd;}
+#showsum span.sel {border:1px solid #f60;}
+
+.showpage {width:420px; position:relative;}
+.showpage a {display:block; width:15px; border:1px solid #ddd; height:60px; line-height:60px; background:#eee; text-align:center; font-size:18px; position:absolute; left:0; top:-62px; text-decoration:none; color:#999;}
+.showpage a#shownext {left:auto; right:0;}
+.showpage a:hover {background:#ccc; color:#777;}
+
+/*商品详细页*/
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*iteminfo*/
+.iteminfo{}
+.iteminfo_tit{ color:#333; font-size:22px; font-family:"微软雅黑",Arial, Helvetica, sans-serif; border-bottom:1px solid #e3e3e3; font-weight:normal; padding-bottom:12px; line-height:32px;}
+.iteminfo_parameter{ padding:8px 5px;}
+.iteminfo_parameter_default{ color:#888;}
+.iteminfo_parameter dt{float:left; display:inline; width:60px; white-space:nowrap; text-align:right; color:#888;}
+
+.iteminfo_mktprice{ font-size:12px; font-family:Arial, Helvetica, sans-serif; text-decoration:line-through;}
+.lh32{ line-height:32px;}
+.iteminfo_price{ color:#c00; font-size:14px; font-family:Arial, Helvetica, sans-serif; vertical-align:middle;}
+.sys_item_price{ color:#c00; font-size:22px; vertical-align:middle;}
+
+.iteminfo_buying {
+    background: #f7f7f7;
+    padding: 0px 5px;
+    float: right;
+    width: 700px;
+    height: 500px;
+}
+
+/*规格*/
+.sys_item_spec dl.iteminfo_parameter{ padding-top:5px; padding-bottom:5px;}
+.sys_item_spec dl.iteminfo_parameter dt{ line-height:32px;}
+
+/*一下正对图片*/
+.sys_spec_img{}
+.sys_spec_img li{ float:left; height:54px; margin:2px 6px 2px 0;}
+.sys_spec_img li a{height:50px; width:50px; padding:1px; border:1px solid #ccc; float:left; background:#fff; display:inline-block; outline:none;}
+.sys_spec_img li a img{ width:50px; height:50px; display:block;}
+.sys_spec_img li a:hover{ border:2px solid #e4393c; padding:0; text-decoration:none;}
+.sys_spec_img li i{ position:absolute; width:10px; height:10px; font-size:0; line-height:0; right:2px; bottom:2px; background:url(img/sys_item_selected.gif) no-repeat right bottom; display:none;}
+.sys_spec_img li.selected a{ border:2px solid #e4393c; padding:0;}
+.sys_spec_img li.selected i{ display:block;}
+
+.sys_spec_text{}
+.sys_spec_text li{ float:left; height:28px;  margin:2px 6px 2px 0; outline:none;}
+.sys_spec_text li a{height:24px; padding:1px 6px; border:1px solid #ccc; background:#fff; display:inline-block; line-height:24px;}
+.sys_spec_text li a:hover{ border:2px solid #e4393c; padding:0 5px; text-decoration:none;}
+.sys_spec_text li i{ position:absolute; width:10px; height:10px; font-size:0; line-height:0; right:2px; bottom:2px; background:url(img/sys_item_selected.gif) no-repeat right bottom; display:none;}
+.sys_spec_text li.selected a{ border:2px solid #e4393c; padding:0 5px;}
+.sys_spec_text li.selected i{ display:block;}
+
+
+#left_product {
+    padding-top: 10px;
+    float: left;
+    width: 220px;
+}
+
+#right_product {
+    width: 915px;
+    float: right;
+}
+
+/*商品介绍*/
+ul.detail_list {
+    padding: 8px;
+    /*border:1px solid #DEDFDE;*/
+    /*border-width: 0 1px 1px;*/
+    overflow: hidden;
+}
+ul.detail_list li {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px 0;
+}
+
+/*服务保障*/
+.serve-agree-bd {
+    padding: 20px;
+}
+
+.serve-agree-bd dt {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #e4393c;
+    font-family: "microsoft yahei"
+}
+
+.serve-agree-bd dd {
+    display: block;
+    margin-left: 10px;
+    padding: 5px;
+    line-height: 18px
+}
+
+.serve-agree-bd dd a {
+    color: #005aa0
+}
+
+/*规格参数，表格样式*/
+.tm-tableAttr {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    margin-bottom: 10px
+}
+
+.tm-tableAttr .tm-tableAttrSub th {
+    text-align: left;
+    color: #404040;
+    background-color: #f7f7f7;
+    font-weight: 700;
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5
+}
+
+.tm-tableAttr tbody td, .tm-tableAttr tbody th {
+    border-top: 1px solid #f7f7f7
+}
+
+.tm-tableAttr thead {
+    background-color: #eee;
+    border-bottom: 1px solid #e4e4e4;
+    font-weight: 700;
+    font-size: 14px;
+    color: #999
+}
+
+.tm-tableAttr thead td {
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 20px
+}
+
+.tm-tableAttr td {
+    padding: 5px
+}
+
+.tm-tableAttr th {
+    padding: 5px 5px 5px 20px;
+    color: #999;
+    font-weight: 400;
+    text-align: right;
+    width: 22%
+}
+
+.tm-tableAttr tbody th {
+    border-right: 1px solid #f7f7f7
+}
+
+/*商品评价样式*/
+.rate-header {
+    border: 1px solid #c8c8c8;
+    padding: 10px 0;
+    display: none;
+}
+
+.rate-header-tags {
+    display: block
+}
+
+.rate-header-tags .rate-graph {
+    display: none
+}
+
+.rate-score {
+    width: 75px;
+    padding: 0 20px;
+    border-right: 1px dotted #ddd;
+    text-align: center;
+    float: left;
+}
+
+.rate-score h4 {
+    color: #404040;
+    font-size: 12px;
+    font-weight: 100
+}
+
+.rate-score strong {
+    color: #f60;
+    font-family: arial;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 2px
+}
+
+.rate-score p {
+    padding-top: 1px;
+    padding-left: 7px;
+    text-align: left
+}
+
+.rate-score .score-value-no, .rate-score .score-value-no em {
+    background: url(//img.alicdn.com/tps/i1/T1HMnMXmVqXXcb2O3B-114-122.png) 0 -27px no-repeat;
+    display: block;
+    width: 60px;
+    height: 12px;
+    overflow: hidden
+}
+
+.rate-score .score-value-no em {
+    background-position: 0 -15px
+}
+
+.rate-score .score-value-4d8 em {
+    width: 57px
+}
+
+.rate-tag-box, .rate-tag-label, .rate-tag-list {
+    display: inline-block;
+    vertical-align: top
+}
+
+.rate-tag-box {
+    width: 630px;
+    overflow:hidden;
+}
+
+.rate-tag-label {
+    color: #ccc;
+    width: 16px;
+    height: 61px;
+    margin-top: 4px;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 0 12px 0 25px;
+    background: url(//img.alicdn.com/tps/i3/T12eC3XklrXXXXXXXX-15-52.png) right center no-repeat
+}
+
+.rate-tag-list {
+    position: relative;
+    width: 555px;
+    height: 70px
+}
+
+.rate-tag-list span {
+    float: left;
+    height: 22px;
+    margin: 7px 6px 6px
+}
+
+.rate-tag-list .rate-tag-inner a {
+    position: relative;
+    float: left;
+    border-radius: 2px;
+    line-height: 18px;
+    padding: 1px 10px;
+    background: #fff;
+    box-shadow: 2px 2px 1px #f2f2f2;
+    border: 1px solid #d3f4e4;
+    white-space: nowrap;
+    color: #409280
+}
+
+.rate-tag-list a i, .rate-tag-list s {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -6px;
+    overflow: hidden
+}
+
+.rate-tag-list .tag-posi a {
+    color: #ff0036;
+    border-color: #ffd7dd
+}
+
+.rate-tag-list .tag-neg .selected, .rate-tag-list a:hover {
+    text-decoration: none;
+    background: #d9f5ed;
+    border-color: #409280
+}
+
+.rate-tag-list .tag-posi .selected, .rate-tag-list .tag-posi a:hover {
+    background: #ffe2e2;
+    border-color: #ff0036;
+    color: #ff0036
+}
+
+.rate-tag-list s {
+    visibility: hidden;
+    bottom: -6px;
+    background: url(//img.alicdn.com/tps/i4/T1X.owXeBcXXbRf1g.-12-24.png) 0 -12px no-repeat
+}
+
+.rate-tag-list .tag-posi s {
+    background-position: 0 0
+}
+
+.rate-tag-list .selected s {
+    visibility: visible
+}
+
+.rate-tag-list a i {
+    display: none;
+    top: -6px;
+    background: url(//img.alicdn.com/tps/i1/T142n0FeBaXXcmZd7.-12-12.png) no-repeat
+}
+
+.rate-tag-list a:hover i {
+    display: block
+}
+
+/*评价列表*/
+.rate-grid {
+    width: 100%
+}
+
+.rate-grid a {
+    color: #333
+}
+
+.rate-grid table {
+    width: 100%;
+    table-layout: fixed
+}
+
+.rate-grid td {
+    padding: 16px 7px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.rate-grid .tm-col-master {
+    width: 494px;
+    padding-right: 30px
+}
+.rate-grid .col-meta {
+    width: 135px;
+    color: #999
+}
+
+.rate-grid .col-author {
+    padding-right: 0
+}
+
+.rate-grid .tm-rate-content{
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 19px;
+    overflow: hidden
+}
+
+.rate-grid .tm-rate-content {
+    color: #333
+}
+
+.rate-grid .tm-rate-content .tm-rate-fulltxt b {
+    display: inline-block;
+    color: #ff0036;
+    font-weight: 400
+}
+
+.tm-rate-content span {
+    color: #999
+}
+
+.rate-grid .tm-rate-date {
+    clear: both;
+    color: #ccc
+}
+
+.rate-grid .rate-sku {
+    margin-bottom: 3px
+}
+
+.rate-grid .rate-user-profile p {
+    margin-right: 5px
+}
+
+.rate-grid .rate-user-info {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 95px
+}
+
+.rate-grid .rate-user-info span {
+    color: #999
+}
+
+.rate-grid .rate-user-grade p.gold-user {
+    color: #C09459
+}
+
+.tm-m-photos, .tm-m-photos-thumb {
+    zoom: 1
+}
+
+.tm-m-photos-thumb {
+    margin: 10px 0;
+    list-style-type: none;
+    height: 40px
+}
+
+.tm-m-photos-thumb li {
+    float: left;
+    border: 2px solid #f2f2f2;
+    padding: 2px;
+    margin-right: 8px;
+    position: relative;
+    transition: border-color .2s ease-out
+}
+
+.tm-m-photos-thumb img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: url(//img.alicdn.com/tps/i1/T1nTBDFCRbXXbzTk_b-25-20.png), url(//assets.alicdn.com/img/common/zoom_in.cur), auto
+}
+
+.tm-photos-arrow {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border: 6px dashed transparent;
+    border-top: 6px solid #f23d6a;
+    position: absolute;
+    left: 15px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    bottom: -8px;
+    background: 0 0
+}

@@ -1,0 +1,61 @@
+.re-top {
+    height: 100px;
+    padding: 0 25px;
+    box-shadow: 0 5px 10px 0 #eee;
+}
+
+.re-logo {
+    margin-top: 20px;
+}
+
+.welcome {
+    font: 24px "微软雅黑";
+    color: #000;
+    margin-top: 35px;
+    padding-left: 38px;
+}
+
+.jump {
+    font: 16px "微软雅黑";
+    margin-top: 56px;
+}
+
+.jump span {
+    color: #b3b3b3;
+}
+
+.jump a:hover {
+    color: #464646;
+    text-decoration: underline;
+}
+
+.main {
+    padding: 60px 0 60px 100px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main-re {
+    border-right: 1px solid #e5e5e5;
+    padding: 0 50px 30px 0;
+    width: 60%;
+}
+
+.vip {
+    padding-left: 10px;
+    width: 30%;
+}
+
+.footer {
+    padding-top: 30px;
+    text-align: center;
+    color: #a2a2a2;
+}
+
+.re-links a {
+    padding: 0 10px;
+    color: #a2a2a2;
+}
+
+.re-copy {
+    margin: 20px 0 30px 0;
+}

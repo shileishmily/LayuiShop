@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+body {
+    margin: 0;
+    font: 14px/1.5 arial, "微软雅黑", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+/*清除浮动最好的方法*/
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.banner-aside a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+}
+
+i, em {
+    display: inline-block;
+    font-style: normal;
+}
+
+img {
+    border: none;
+}
+
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url(../font/iconfont.svg);
+    src: url(../font/iconfont.eot);
+    src: url(../font/iconfont.eot-);
+    src: url(../font/iconfont.ttf);
+    src: url(../font/iconfont.woff);
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased; /*对于字体的渲染 但是只对 与osmoc有用*/
+    -webkit-text-stroke-width: 0.2px; /*设置对象描边厚度*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container{width:1226px;margin:5px 0px auto}
+
+/*banner图开始*/
+#banner{height:460px;position:relative;}
+#banner .banner-aside{width:234px;height:460px;background:rgba(0,0,0,0.6);position:absolute;left:0;top:0;z-index:3;}
+#banner .aside-txt{height:420px;padding-top:20px;width:234px;}
+#banner .aside-txt .topic>a{padding-left:30px;height:42px;line-height:42px;color:#fff;display:block;position:relative;}
+#banner .aside-txt .topic:hover>a{background:#ff6700;}
+#banner .aside-txt .topic>a i.iconfont{position:absolute;top:12px;right:20px;color:rgba(255,255,255,0.6);font-size:16px;line-height:16px;}
+#banner .aside-txt .children-list{width:530px;height:458px;position:absolute;left:234px;top:0;background:#eee;border:1px solid #E0E0E0;display:none;z-index:100;}
+#banner .aside-txt .w268{width:268px;}
+#banner .aside-txt .children-list ul{float:left;}
+#banner .aside-txt .children-list ul li{width:258px;height:76px;position:relative;overflow: hidden;}
+#banner .aside-txt .children-list a.link-img{padding:18px 10px;line-height:40px; color:#333; transition:0.2s ease 0s;width:177px;}
+#banner .aside-txt .children-list a.link-img img{margin-right:10px;}
+#banner .aside-txt .children-list a.link-img span{line-height:40px;}
+#banner .aside-txt .children-list a.sel-buy{width:58px;height:22px;line-height:22px;text-align:center;border:1px solid #ff6700;color:#ff6700;position:absolute;top:35%;}
+#banner .aside-txt .children-list a.sel-buy:hover{background-color:#ff6700;color:#fff;}
+
+/*banner图开始 END*/
+
+.common .topic{height:50px; line-height:50px; padding:0px 15px; margin: 0px;}
+.common .content{padding-top: 0px; margin-bottom: 5px;}
+
+
+/*footer-service*/
+#footer-service{background:#fafafa;}
+#footer-service .container{padding:27px 0;border-bottom:1px solid #b0b0b0;width:1226px;margin:0px auto}
+#footer-service li{width:19.8%;border-left:1px solid #b0b0b0;height:25px;line-height:25px;float:left;text-align:center;}
+#footer-service li.first{border-left:none;}
+#footer-service li a{font-size:16px;color:#616161;transition:0.2s;}
+#footer-service li a i{font-size:24px;line-height:24px;margin-right:6px;}
+#footer-service li a:hover{color:#ff6700;}
+
+.site-help{padding:40px 0;}
+.site-help .container{margin:0px auto}
+.site-help dl{width:160px;height:112px;float:left; text-align: center}
+.site-help dt{margin:-1px 0 26px;font-size:14px;line-height:1.25;color:#424242;}
+.site-help dd{font-size:12px;margin:10px 0 0;line-height:1.3;}
+.site-help dd a{color:#757575;}
+.site-help dd a:hover{color:#ff6700;}
+
+.contact{width:251px;height:112px;border-left:1px solid #e0e0e0;text-align:center;color:#616161;}
+.contact p.phone{color:#ff6700;font-size:22px;}
+.contact p.date,.contact p.cost{color:#b0b0b0;font-size:12px;}
+.contact .online{width:118px;height:28px;line-height:28px;border:1px solid #ff6700;background-color:#fff;color:#FF6700;margin-top: 16px;}
+.contact .online:hover{color:#fff;background:#f25807;border-color:#F25807;}
+/*footer-service END*/

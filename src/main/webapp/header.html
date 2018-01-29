@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>商城首页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="frame/layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="css/header.css"  media="all">
+    <link rel="stylesheet" href="css/index.css"  media="all">
+    <link rel="icon" href="image/logo.png">
+</head>
+
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">小磊科技股份有限公司</div>
+
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">公司介绍</a></li>
+            <li class="layui-nav-item"><a href="">新闻资讯</a></li>
+            <li class="layui-nav-item"><a href="">品牌战略</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">科技创新</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">人工智能</a></dd>
+                    <dd><a href="">无人机</a></dd>
+                    <dd><a href="">小磊电视</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">小磊商城</a></li>
+        </ul>
+
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a id="shopCart" target="_blank">购物车<span class="layui-badge">9</span></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">消息通知<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><img src="img/header.jpg" class="layui-nav-img">张二嘎</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">个人信息</a></dd>
+                    <dd><a href="javascript:;">安全设置</a></dd>
+                    <dd><a href="javascript:;">安全退出</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="searchs_box">
+    <form>
+        <input type="text" name="keyword" id="keyword" lay-verify="required" autocomplete="off" placeholder="请输入要查询的商品" class="layui-input">
+        <button id="searchBtn" class="layui-btn" lay-filter="search"><i class="layui-icon"></i>立即查询</button>
+    </form>
+</div>
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="frame/layui/layui.js"></script>
+<script type="text/javascript" src="js/common/module-manage.js" ></script>
+<script type="text/javascript" src="js/controller/header.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.container{width:1140px;margin:0 auto}
+#page-main{background:#f5f5f5;padding:5px 0;margin-top:0px;}
+
+
+#around{height: 680px; margin-bottom:8px;}
+
+.common-content ul li a.pic{width:160px;display:block;margin:0 auto 20px;}
+.common-content ul li a.pic img{width:160px;height:160px;}
+.common-content ul li h3{height:24px;line-height:24px;font-weight:400;text-align:center;}
+.common-content ul li h3 a{font-size:14px;color:#212121;height:16px;line-height:16px;}
+.common-content ul li p.desc{font-size:14px;line-height:20px;height:20px;color:#c5BBB6;text-align:center;}
+.common-content ul li p.price{color:#ff8400;text-align:center;line-height:30px;}
+.common-content ul li p.rank{text-align:center;color:#c5BBB6;}
+
+.content-right{width: 1140px;}
+.content-right li{width:218px;height:260px;padding:20px 0;float:left;margin-left:8px;margin-bottom:8px;background:#fff;transition:all 0.3s ease 0s;position: relative;}
+.content-right li .review-wrapper{position:absolute;bottom:-10px;left:0;z-index:3;width:234px;font-size:12px;background:#ff6700;opacity: 0;transition:all 0.2s linear 0s;overflow:hidden;}
+.content-right li .review-wrapper a{display:block;padding:8px 30px;outline: 0;}
+.content-right li .review-wrapper span.review{display:block;margin-bottom:5px;color:#fff;}
+.content-right li .review-wrapper span.author{display:block;color:rgba(255,255,255,0.6);text-align:center;}
+.content-right li:hover .review-wrapper{height:76px;opacity: 1;bottom:0;left:0;}
+.content-right li div.flag{position:absolute;top:0;left:50%;width:64px;height:20px;margin-left:-32px;font-size:12px;line-height:20px; color:#fff;text-align: center;}
+.content-right li div.flag-new{background-color:#83c44e; z-index:5;}
+
+.content-right ul li{position:relative;}
+.content-right ul li.min-box{height:93px;padding:50px 0 0 0;overflow:hidden;}
+.content-right ul li.min-box a.pic{position:absolute;right:20px;top:32px;width:80px;}
+.content-right ul li.min-box a.pic img{width:80px;height:80px;}
+.content-right ul li.min-box h3{margin:-10px 110px 5px 30px;text-align:left;}
+.content-right ul li.min-box p.price{margin:0 110px 0 30px;text-align:left;line-height:14px;font-size:14px;}
+.content-right ul li.min-box a.pic i{font-size:48px;line-height:48px;color:#FF6700;}
